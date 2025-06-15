@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: mcp-client
+  ai:
+    deepseek:
+      api-key: sk-20d710af3e874d51aa22b50de4c0535f
+    mcp:
+      client:
+        toolcallback:
+          enabled: true
+        sse:
+          connections:
+            server1:
+              url: http://localhost:8080
